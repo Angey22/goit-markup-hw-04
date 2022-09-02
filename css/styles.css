@@ -218,9 +218,16 @@ body {
     padding-top: 200px; /* + */
     padding-bottom: 200px; /* + */
     text-align: center; /* + */
+    max-height: 600px; /* ??? */
+    max-width: 1600px; /* ??? */
+    margin: 0 auto; /* ??? */
     
     /* Decor */
-    background-color: var(--complementary-background-color); /* + */
+    background-color: #C4C4C4; /* ??? */
+    background-image:  linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_background_image_o.jpg); /* ??? */
+    background-repeat: no-repeat; /* ??? */
+    background-position: center; /* ??? */
+    background-size: cover; /* ??? */
 }
     .hero-title {
         /* Geometry */
@@ -316,6 +323,16 @@ intended for centering and limiting the content of site elements in width. */
 .peculiarities-list-itm {
     /* Geometry */
     max-width: 270px;
+}
+
+/* Decorative background & icons*/
+.peculiarities-list-itm::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background: var(--secondary-background-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
 }
 
 .peculiarities-list-itm:not(:last-child) {

@@ -19,6 +19,7 @@
     --accent-text-color: #2196F3;
     --individual-text-color: rgba(255, 255, 255, 0.6);
     --logo-dicor-color: #000;
+    --portfolio-card-border-color: #EEEEEE;
     --portfolio-card-set-gap: 30px;
 }
 
@@ -40,10 +41,14 @@ img {
     list-style: none;
 }
 
-/* Utility class for resetting settings links */
+/* Utility class for resetting settings links &  adding an accent color on hover and focus of the corresponding links */
 .link {
     text-decoration: none;
 }
+    .link:hover,
+    .link:focus {
+        color: var(--accent-text-color);
+    }
 
 /* Utility class that hides the display of headings from the user, but remains they visible to search engines */
 .visually-hidden {
@@ -61,23 +66,23 @@ img {
 
 /* Common body parameters of all site pages */
 body {
-    background: var(--maine-background-color); /* + */
-    color: var(--maine-text-color); /* + */
-    font-family: 'Roboto', sans-serif; /* + */
-    letter-spacing: 0.03em; /* + */
+    background: var(--maine-background-color);
+    color: var(--maine-text-color);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
 }
 
 /* Website logo */
 .logo {
     /* Geometri */
-    display: inline-block; /* ??? */
+    display: inline-block;
 
     /* Text */
-    text-decoration: none; /* + */
-    font-family: 'Raleway', sans-serif; /* + */
-    font-size: 26px; /* + */
-    line-height: 1.2; /* + */
-    color: var(--accent-text-color);  /* + */
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+    color: var(--accent-text-color);
 }
     .logo-second-half-head {
         /* Text */
@@ -131,19 +136,15 @@ body {
     padding: 32px 0; /* ??? */
 
     /* Text */
-    text-decoration: none; /* + */
     font-weight: 500; /* + */
     font-size: 14px; /* + */
     line-height: 1.2; /* + */
     letter-spacing: 0.02em; /* + */
     color: var(--secondary-text-color); /* + */
 }
-    /* Interactive effect */
+    /* Additional interactive effect */
     .site-nav-link:hover,
     .site-nav-link:focus {
-        /* Text */
-        color: var(--accent-text-color); /* + */
-
         /* Geometry */
         border-bottom: 4px solid var(--accent-text-color);
         border-radius: 2px;
@@ -158,7 +159,6 @@ body {
 /* Contact information */
 .contacts-head {
     /* Text */
-    text-decoration: none; /* + */
     font-weight: 500; /* + */
     font-size: 14px; /* + */
     line-height: 1.14; /* + */
@@ -169,7 +169,6 @@ body {
 .contacts-foot, .contacts-map {
     /* Text */
     font-style: normal; /* + */
-    text-decoration: none; /* + */
     font-size: 14px; /* + */
     line-height: 1.7; /* + */
     color: var(--individual-text-color); /* + */
@@ -178,17 +177,6 @@ body {
 .contacts-map {
     /* Text */
     color: var(--complementary-text-color); /* + */
-}
-
-/* Contacts links state at hover & focus */
-.contacts-head:hover,
-.contacts-head:focus,
-.contacts-foot:hover,
-.contacts-foot:focus,
-.contacts-map:hover,
-.contacts-map:focus{
-    /* Text */
-    color: var(--accent-text-color); /* + */
 }
 
 /* Підвал */
@@ -302,8 +290,6 @@ intended for centering and limiting the content of site elements in width. */
     padding-bottom: 94px; /* + */
     margin-left: auto; /* + */
     margin-right: auto; /* + */
-
-    /* outline: 2px dashed tomato;  - служебный стиль для выделения границ секции */
 }
 
 .container-vert-padding-none {
@@ -330,8 +316,11 @@ intended for centering and limiting the content of site elements in width. */
     display: block;
     content: "";
     height: 120px;
-    background: var(--secondary-background-color);
+    background-color: var(--secondary-background-color);
     border-radius: 4px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
     margin-bottom: 30px;
 }
 
@@ -438,7 +427,6 @@ intended for centering and limiting the content of site elements in width. */
     background: var(--secondary-background-color); /* + */
     border: none; /* + */
     border-radius: 4px; /* + */
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); /* + */
     padding: 6px 22px; /* + */
     
     /* Button text */
@@ -468,21 +456,24 @@ intended for centering and limiting the content of site elements in width. */
 .portfolio {
     /* Geometry */
     display: flex; /* + */
-    flex-wrap: wrap; /* !!! */
-    margin-top: calc(-1 * var(--portfolio-card-set-gap)); /* !!! */
-    margin-left: calc(-1 * var(--portfolio-card-set-gap)); /* !!! */
+    flex-wrap: wrap; /* + */
+    margin-top: calc(-1 * var(--portfolio-card-set-gap)); /* + */
+    margin-left: calc(-1 * var(--portfolio-card-set-gap)); /* + */
 }
 
 .portfolio-itm {
     /* Geometry */
-    flex-basis: calc(100%/3 - 30px); /* !!! */
-    margin-top: var(--portfolio-card-set-gap); /* !!! */
-    margin-left: var(--portfolio-card-set-gap); /* !!! */
+    flex-basis: calc(100%/3 - 30px); /* + */
+    margin-top: var(--portfolio-card-set-gap); /* + */
+    margin-left: var(--portfolio-card-set-gap); /* + */
 }
 
-.portfolio-card {
-    /* Decor */
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); /* ??? */
+    .portfolio-itm:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+
+.portfolio-link {
+    text-decoration: none;
 }
 
 .portfolio-card-content {
@@ -490,9 +481,9 @@ intended for centering and limiting the content of site elements in width. */
     padding: 20px 24px; /* ??? */
     
     /* Decor */
-    border-right: 1px solid #EEEEEE; /* ??? */
-    border-left: 1px solid #EEEEEE;  /* ??? */
-    border-bottom: 1px solid #EEEEEE; /* ??? */
+    border-right: 1px solid var(--portfolio-card-border-color); /* ??? */
+    border-left: 1px solid var(--portfolio-card-border-color);  /* ??? */
+    border-bottom: 1px solid var(--portfolio-card-border-color); /* ??? */
 }
 
 .portfolio-card-title {

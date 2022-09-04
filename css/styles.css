@@ -25,8 +25,8 @@
 
 /* Reset indentation settings in a tag group */
 h1, h2, h3, h4, h5, h6, ul, p {
-padding: 0; /* + */
-margin: 0; /* + */
+padding: 0;
+margin: 0;
 }
 
 /* Service setting of geometry rules for all images */
@@ -86,17 +86,17 @@ body {
 }
     .logo-second-half-head {
         /* Text */
-        color: var(--logo-dicor-color); /* + */
+        color: var(--logo-dicor-color);
         /* Geometri */
-        display: inline-block; /* ??? */
+        display: inline-block;
         margin-right: 93px;
     }
     .logo-second-half-foot {
         /* Text */
-        color: var(--complementary-text-color); /* + */
+        color: var(--complementary-text-color);
         /* Geometri */
-        display: inline-block; /* ??? */
-        margin-bottom: 20px; /* ??? */
+        display: inline-block;
+        margin-bottom: 20px;
     }
 
 .header {
@@ -106,9 +106,9 @@ body {
 /* General header options */
 .header-container {
     /* Geometry */
-    display: flex; /* ??? */
-    align-items: center; /* ??? */
-    justify-content: space-between; /* ??? */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* Site navigation */
@@ -121,26 +121,26 @@ body {
 .nav-list,
 .contacts-head-list {
     /* Geometry */
-    display: flex; /* + */
+    display: flex;
 }
 
 .nav-list-itm:not(:last-child),
 .contacts-head-itm:not(:last-child) {
     /* Geometry */
-    margin-right: 50px; /* + */
+    margin-right: 50px;
 }
 
 .site-nav-link {
     /* Geometry */
-    display: block; /* ??? */
-    padding: 32px 0; /* ??? */
+    display: block;
+    padding: 32px 0;
 
     /* Text */
-    font-weight: 500; /* + */
-    font-size: 14px; /* + */
-    line-height: 1.2; /* + */
-    letter-spacing: 0.02em; /* + */
-    color: var(--secondary-text-color); /* + */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
 }
     /* Additional interactive effect */
     .site-nav-link:hover,
@@ -159,34 +159,34 @@ body {
 /* Contact information */
 .contacts-head {
     /* Text */
-    font-weight: 500; /* + */
-    font-size: 14px; /* + */
-    line-height: 1.14; /* + */
-    letter-spacing: 0.02em; /* + */
-    color: var(--maine-text-color); /* + */
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--maine-text-color);
 }
 
 .contacts-foot, .contacts-map {
     /* Text */
-    font-style: normal; /* + */
-    font-size: 14px; /* + */
-    line-height: 1.7; /* + */
-    color: var(--individual-text-color); /* + */
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--individual-text-color);
 }
 
 .contacts-map {
     /* Text */
-    color: var(--complementary-text-color); /* + */
+    color: var(--complementary-text-color);
 }
 
 /* Підвал */
 .footer {
     /* Geometry */
-    padding-top: 60px; /* ??? */
-    padding-bottom: 60px; /* ??? */
+    padding-top: 60px;
+    padding-bottom: 60px;
 
     /* Decor */
-    background-color: var(--complementary-background-color); /* + */
+    background-color: var(--complementary-background-color);
 }
 
 .footer-list {
@@ -197,68 +197,68 @@ body {
 
 .footer-list-item:not(:last-child) {
     /* Geometry */
-    margin-bottom: 9px; /* + */
+    margin-bottom: 9px;
 }
 
 /* Шапка - "Hero" */
 .hero {
     /* Geomeetry */
-    padding-top: 200px; /* + */
-    padding-bottom: 200px; /* + */
-    text-align: center; /* + */
-    max-height: 600px; /* ??? */
-    max-width: 1600px; /* ??? */
-    margin: 0 auto; /* ??? */
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    max-height: 600px;
+    max-width: 1600px;
+    margin: 0 auto;
     
     /* Decor */
-    background-color: #C4C4C4; /* ??? */
-    background-image:  linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_background_image_o.jpg); /* ??? */
-    background-repeat: no-repeat; /* ??? */
-    background-position: center; /* ??? */
+    background-color: #C4C4C4; /* + */
+    background-image:  linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero_background_image_o.jpg); /* + */
+    background-repeat: no-repeat; /* + */
+    background-position: center; /* + */
     background-size: cover; /* ??? */
 }
     .hero-title {
         /* Geometry */
-        margin-bottom: 30px; /* + */
+        margin-bottom: 30px;
 
         /* Text */
-        font-weight: 900; /* + */
-        font-size: 44px; /* + */
-        line-height: 1.4; /* + */
-        letter-spacing: 0.06em; /* + */
-        text-transform: uppercase; /* + */
-        color: var(--complementary-text-color); /* + */        
+        font-weight: 900;
+        font-size: 44px;
+        line-height: 1.4;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        color: var(--complementary-text-color);
 }
 
     .herro-button {
         /* Button interactivity settings */
-        cursor: pointer; /* + */
+        cursor: pointer;
         
         /* Button geometry */
-        display: inline-block; /* + */
-        border: 1px solid transparent; /* ??? */
-        background: var(--accent-text-color); /* + */        
-        border-radius: 4px; /* + */
-        border: none; /* + */
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /* + */
+        display: inline-block;
+        border: 1px solid transparent;
+        background: var(--accent-text-color);        
+        border-radius: 4px;
+        border: none;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         padding: 10px 32px; /* + */
-        min-width: 216px; /* ??? */ 
-        min-height: 50px; /* ??? */
+        min-width: 216px; 
+        min-height: 50px;
         
         /* Button text */
-        font-family: inherit; /* + */
-        font-weight: 700; /* + */
-        font-size: 16px; /* + */
-        line-height: 1.9; /* + */
-        text-align: center; /* + */
-        letter-spacing: 0.06em; /* + */
-        color: var(--complementary-text-color); /* + */
+        font-family: inherit;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.9;
+        text-align: center;
+        letter-spacing: 0.06em;
+        color: var(--complementary-text-color);
     }
         /* Interactivity of changing the appearance of herro-button */
         .herro-button:hover,
         .herro-button:focus {
-        background-color: #188CE8; /* + */
-        border: none; /* + */
+        background-color: #188CE8;
+        border: none;
         }
 
 /* General settings for "sections" of all pages of the site */
@@ -272,24 +272,24 @@ body {
     margin-bottom: 50px; /* Bottom padding for h2 section headers */
 
     /* Text */
-    text-align: center; /* + */
-    font-weight: 700; /* + */
-    font-size: 36px; /* + */
-    line-height: 1.2; /* + */
-    color: var(--secondary-text-color); /* + */    
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    color: var(--secondary-text-color);   
 }
 
 /* Geometri settings of the ".container" auxiliary class,
 intended for centering and limiting the content of site elements in width. */
 .container {
     /* Geometry */
-    width: 1200px; /* + */
-    padding-left: 15px; /* + */
-    padding-right: 15px; /* + */
-    padding-top: 94px; /* + */
-    padding-bottom: 94px; /* + */
-    margin-left: auto; /* + */
-    margin-right: auto; /* + */
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container-vert-padding-none {
@@ -310,35 +310,35 @@ intended for centering and limiting the content of site elements in width. */
     /* Geometry */
     max-width: 270px;
 }
+    /* Cleaning up the geometry */
+    .peculiarities-list-itm:not(:last-child) {
+        /* Geometry */
+        margin-right: 30px;
+    }
 
 /* Decorative background & icons*/
 .peculiarities-list-itm::before {
-    display: block;
-    content: "";
-    height: 120px;
-    background-color: var(--secondary-background-color);
-    border-radius: 4px;
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-bottom: 30px;
-}
-
-.peculiarities-list-itm:not(:last-child) {
-    /* Geometry */
-    margin-right: 30px;
+    display: block; /* + */
+    content: ""; /* + */
+    height: 120px; /* + */
+    background-color: var(--secondary-background-color); /* + */
+    border-radius: 4px; /* + */
+    background-position: center; /* + */
+    background-size: contain; /* + */
+    background-repeat: no-repeat; /* + */
+    margin-bottom: 30px; /* + */
 }
 
 .peculiarities-list-title {
     /* Geometry */
-    margin-bottom: 10px; /* ??? */
+    margin-bottom: 10px;
 
     /* Text */
-    font-weight: 700; /* + */
-    font-size: 14px; /* + */
-    line-height: 1.14; /* + */
-    text-transform: uppercase; /* + */
-    color: var(--secondary-text-color); /* + */    
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);  
 }
 
 .peculiarities-list-text {
@@ -351,7 +351,7 @@ intended for centering and limiting the content of site elements in width. */
 .work-list {
     /* Geometry */
     display: flex;
-    justify-content: center; /* ??? */
+    justify-content: center;
 }
 
 .work-list-itm:not(:last-child) {
@@ -380,18 +380,18 @@ intended for centering and limiting the content of site elements in width. */
 
 .team-list-img {
     /* Geometry */
-    margin-bottom: 30px; /* + */
+    margin-bottom: 30px;
 }
 
 .team-name {
     /* Geometry */
-    margin-bottom: 10px; /* ??? */
+    margin-bottom: 10px;
 
     /* Text */
-    font-weight: 500; /* + */
-    font-size: 16px; /* + */
-    line-height: 1.2; /* + */
-    color: var(--secondary-text-color); /* + */    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    color: var(--secondary-text-color);    
 }
 
 .team-position {
@@ -399,8 +399,8 @@ intended for centering and limiting the content of site elements in width. */
     margin-bottom: 30px;
 
     /* Text */
-    font-size: 16px; /* + */
-    line-height: 1.2; /* + */
+    font-size: 16px;
+    line-height: 1.2;
 }
 
 /* Наші роботи, section in main on page portfolio.html*/
@@ -419,28 +419,28 @@ intended for centering and limiting the content of site elements in width. */
 
 .portfolio-filter-button {
     /* Button interactivity settings */
-    cursor: pointer; /* + */
+    cursor: pointer;
     
     /* Button geometry */
-    display: block; /* + */
-    border: 1px solid transparent; /* ??? */
-    background: var(--secondary-background-color); /* + */
-    border: none; /* + */
-    border-radius: 4px; /* + */
-    padding: 6px 22px; /* + */
+    display: block;
+    border: 1px solid transparent;
+    background: var(--secondary-background-color);
+    border: none;
+    border-radius: 4px;
+    padding: 6px 22px;
     
     /* Button text */
-    color: var(--secondary-text-color); /* + */
-    font-family: inherit; /* + */
-    font-weight: 500; /* + */
-    font-size: 16px; /* + */
-    line-height: 1.6; /* + */
-    text-align: center; /* + */
+    color: var(--secondary-text-color);
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
 }
 
     .first-portfolio-filter-button {
         /* Button geometry */
-        padding: 6px 25px; /* + */
+        padding: 6px 25px;
     }
 
     /* Interactivity of changing the appearance of portfolio-buttons */
@@ -455,21 +455,21 @@ intended for centering and limiting the content of site elements in width. */
 /* General geometry parameters of the section with cards - portfolio */
 .portfolio {
     /* Geometry */
-    display: flex; /* + */
-    flex-wrap: wrap; /* + */
-    margin-top: calc(-1 * var(--portfolio-card-set-gap)); /* + */
-    margin-left: calc(-1 * var(--portfolio-card-set-gap)); /* + */
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--portfolio-card-set-gap));
+    margin-left: calc(-1 * var(--portfolio-card-set-gap));
 }
 
 .portfolio-itm {
     /* Geometry */
-    flex-basis: calc(100%/3 - 30px); /* + */
-    margin-top: var(--portfolio-card-set-gap); /* + */
-    margin-left: var(--portfolio-card-set-gap); /* + */
+    flex-basis: calc(100% / 3 - var(--portfolio-card-set-gap));
+    margin-top: var(--portfolio-card-set-gap);
+    margin-left: var(--portfolio-card-set-gap);
 }
 
     .portfolio-itm:hover {
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); /* + */
     }
 
 .portfolio-link {
@@ -478,29 +478,29 @@ intended for centering and limiting the content of site elements in width. */
 
 .portfolio-card-content {
     /* Geometry */
-    padding: 20px 24px; /* ??? */
+    padding: 20px 24px;
     
     /* Decor */
-    border-right: 1px solid var(--portfolio-card-border-color); /* ??? */
-    border-left: 1px solid var(--portfolio-card-border-color);  /* ??? */
-    border-bottom: 1px solid var(--portfolio-card-border-color); /* ??? */
+    border-right: 1px solid var(--portfolio-card-border-color);
+    border-left: 1px solid var(--portfolio-card-border-color);
+    border-bottom: 1px solid var(--portfolio-card-border-color);
 }
 
 .portfolio-card-title {
     /* Geometry */
-    margin-bottom: 4px; /* + */
+    margin-bottom: 4px;
     
     /* Text */
-    font-weight: 700; /* + */
-    font-size: 18px; /* + */
-    line-height: 2; /* + */
-    letter-spacing: 0.06em; /* + */
-    color: var(--secondary-text-color); /* + */
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--secondary-text-color);
 }
 
 .portfolio-card-text {
     /* Text */
-    font-size: 16px; /* + */
-    line-height: 1.9; /* + */
-    color: var(--maine-text-color); /* + */
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--maine-text-color);
 }

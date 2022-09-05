@@ -124,8 +124,7 @@ body {
     display: flex;
 }
 
-.nav-list-itm:not(:last-child),
-.contacts-head-itm:not(:last-child) {
+.nav-list-itm:not(:last-child) {
     /* Geometry */
     margin-right: 50px;
 }
@@ -156,14 +155,37 @@ body {
     color: var(--accent-text-color);
 }
 
+.contacts-head-itm:not(:last-child) {
+    /* Geometry */
+    margin-right: 30px;
+}
+
 /* Contact information */
-.contacts-head {
+.contacts-head-mail,
+.contacts-head-tel {
+    display: inline-flex;
     /* Text */
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--maine-text-color);
+    color: var(--maine-text-color);    
+}
+
+/* Decoration contacts head link */
+.contacts-head-mail::before,
+.contacts-head-tel::before {
+    display: block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+
+    background-color: tomato;
+    /* outline: 1px solid #000; */
 }
 
 .contacts-foot, .contacts-map {
@@ -234,7 +256,10 @@ body {
     box-sizing: border-box;
     width: 44px;
     height: 44px;
-    border-radius: 100%;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
     background-color: tomato; /* Убрать!!! */
 }
 
@@ -246,9 +271,6 @@ body {
 .footer-social {
     background-color: rgba(255, 255, 255, 0.1);
 }
-
-
-
 
 /* Шапка - "Hero" */
 .hero {

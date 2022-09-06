@@ -161,32 +161,27 @@ body {
 }
 
 /* Contact information */
-.contacts-head-mail,
-.contacts-head-tel {
-    display: inline-flex;
+.contacts-head-link {
+    /* Geometry */
+    display: flex; /* ??? */
+    align-items: center; /* ??? */
+    
     /* Text */
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--maine-text-color);    
+    color: var(--maine-text-color);  
+    
+    /* for SVG icon with id: 'icon-envelope' & 'icon-smartphone'  */
+    fill: currentColor; /* ??? */
 }
 
-/* Decoration contacts head link */
-.contacts-head-mail::before,
-.contacts-head-tel::before {
-    display: block;
-    content: "";
-    width: 16px;
-    height: 16px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-right: 10px;
-
-    background-color: tomato;
-    /* outline: 1px solid #000; */
-}
+    .contacts-head-text {
+        /* Geometry */
+        display: inline-block;
+        margin-left: 10px;
+    }
 
 .contacts-foot, .contacts-map {
     /* Text */
@@ -233,6 +228,10 @@ body {
     margin-bottom: 9px;
 }
 
+.footer-social-block {
+    padding-top: 12px;
+}
+
 .social-list {
     /* Geometry */
     display: flex;
@@ -251,25 +250,44 @@ body {
     color: var(--complementary-text-color);
 }
 
-.social-list-item {
-    /* Decor */
-    box-sizing: border-box;
-    width: 44px;
-    height: 44px;
-    background-size: auto;
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-    background-color: tomato; /* Убрать!!! */
-}
-
 .social-list-item:not(:last-child) {
     /* Geometry */
     margin-right: 10px;
 }
 
-.footer-social {
-    background-color: rgba(255, 255, 255, 0.1);
+.social-list-link {
+    /* Icons location setting */
+    display: flex;
+    justify-content: center; /* + */
+    align-items: center; /* + */
+
+    /* Link geometry */
+    width: 44px; /* + */
+    height: 44px; /* + */
+    border-radius: 50%; /* + */
+}
+
+.social-link-footer {
+    background-color: rgba(255, 255, 255, 0.1); /* + */
+    /* for SVG icon with id: 'icon-instagram'; 'icon-twitter'; 'icon-facebook'; 'icon-linkedin; */
+    fill: var(--complementary-text-color); /* ??? */
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color: var(--accent-text-color); /* ??? */
+}
+
+.social-link-team {
+    /* for SVG icon with id: 'icon-instagram'; 'icon-twitter'; 'icon-facebook'; 'icon-linkedin; */
+    fill: #AFB1B8; /* ??? */
+}
+
+.social-link-team:hover,
+.social-link-team:focus {
+    background-color: var(--accent-text-color); /* ??? */
+    /* for SVG icon with id: 'icon-instagram'; 'icon-twitter'; 'icon-facebook'; 'icon-linkedin; */
+    fill: #fff; /* ??? */
 }
 
 /* Шапка - "Hero" */
@@ -374,8 +392,6 @@ intended for centering and limiting the content of site elements in width. */
 .peculiarities-list {
     /* Geometry */
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
 }
 
 .peculiarities-list-itm {
@@ -388,17 +404,20 @@ intended for centering and limiting the content of site elements in width. */
         margin-right: 30px;
     }
 
-/* Decorative background & icons*/
-.peculiarities-list-itm::before {
-    display: block; /* + */
-    content: ""; /* + */
+/* Decorative background & location setting of icons with id: 'icon-antenna'; 'icon-clock'; 'icon-diagram'; 'icon-astronaut' */
+.peculiarities-list-decor {
+    /* Background geometry */
+    display: flex; /* + */
     height: 120px; /* + */
-    background-color: var(--secondary-background-color); /* + */
     border-radius: 4px; /* + */
-    background-position: center; /* + */
-    background-size: contain; /* + */
-    background-repeat: no-repeat; /* + */
     margin-bottom: 30px; /* + */
+    
+    /* Icons location setting */
+    justify-content: center; /* + */
+    align-items: center; /* + */
+    
+    /* Background decoration */
+    background-color: var(--secondary-background-color); /* + */
 }
 
 .peculiarities-list-title {
@@ -479,22 +498,32 @@ intended for centering and limiting the content of site elements in width. */
 
 /* Постійні клієнти, section on page index.html */
 .client-list {
+    /* Geometry */
     display: flex;
-    justify-content: center;
-}
-
-.client-list-item {
-    /* Decor */
-    box-sizing: border-box;
-    width: 170px;
-    height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
 }
 
 .client-list-item:not(:last-child) {
     /* Geometry */
     margin-right: 30px;
+}
+
+.client-list-link {
+    /* Icons location setting */
+    display: flex;
+    justify-content: center; /* + */
+    align-items: center; /* + */
+    
+    /* Decor general setting */
+    color: #AFB1B8;
+    
+    /* Link geometry */
+    width: 170px;
+    height: 92px;
+    border: 1px solid currentColor; /* + */
+    border-radius: 4px;
+
+    /* for SVG icon with id: 'icon-client_logo_1'...'icon-client_logo_6' */
+    fill: currentColor; /* ??? */
 }
 
 /* Наші роботи, section in main on page portfolio.html*/
